@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex Таблиця</title>
+    <link rel="stylesheet" href="../Flex.css">
+</head>
+<script src="../index.js"></script>
+<body>
+<div class="flex-table">
+    <div class="cell1">
+        Успіх — це здатність крокувати від однієї невдачі до іншої, не втрачаючи ентузіазму
+        <button class="button-x" onclick="displayFifth()">Сила в Ньютонах</button>
+    </div>
+    <div class="middle-section">
+        <div class="left-column">
+            "Щоб дійти до мети, людині потрібно тільки одне — йти". — Оноре де Бальзак
+        </div>
+        <div class="center-column">
+            <div class="cell3" id="c3">dolor sit amet</div>
+            <!---------------------------->
+            <div class="cell5">
+                    <div class="task isv">
+                        First Task
+                        <button class="t" onclick="changeText()">Change-text</button>
+                    </div>
+                    <div class="task isv">
+                        Second Task
+                        <label for="l" class="t">Введіть середню лінію трапеції</label>
+                        <input type='number' id="l">
+                        <label for="h">Введіть висоту трапеції</label>
+                        <input type='number' id="h">
+                        <button class="t" onclick="findArea()">Find area</button>
+                        <span id='res' class="t">Результат: </span>
+                    </div>
+                    <div class="task isv">
+                        Third Task
+                        <label for="n" class="t">Введіть натуральне число</label>
+                        <input type='number' id="n">
+                        <button class="t" onclick="getDividers()">Get dividers</button>
+                        <button class="t" onclick="getDividersFromCookies()">Get from cookies</button>
+                    </div>
+                    <div class="task isv">
+                        Fourth Task
+                        <label class='t' for="radio">Змінити на верхній регістр</label>
+                        <input type='radio' id="radio" onclick="setUpper()">
+                    </div>
+                    <div id='fifth' class="task isv5">
+                        Fifth Task
+                        <label class='t' for="f">Введіть посилання на картинку, яку ви бажаєте вставити</label>
+                        <input type='text' id="f">
+                        <button class="t" onclick= "setImage()">Set image</button>
+                    </div>
+            </div>
+            <!---------------------------->
+        </div>
+        <div id='imp_text' class="right-column">
+            – Алло, це лінія допомоги алкоголікам?
+            <br> – Так.
+            <br>– Підкажіть як зробити мохіто!
+        </div>
+    </div>
+    <div class="cell6" id="c6">lorem ipsum</div>
+    <div class="cell7">
+        Вигляд бурого ведмедя є типовим для ведмедів узагалі. У нього міцний кремезний тулуб із високою холкою, масивна голова з невеликими вухами та очима. Хвіст короткий (6,5—21 см), часто повністю прихований у шерсті. Лапи міцні, з великими невтяжними кігтями довжиною 8—15 сантиметрів, п'ятипалі, стопоходячі. Шерсть густа, зазвичай забарвлена рівномірно або з деяким потемнінням основного кольору на морді та лапах.
+        <button class="button-y">Качалка</button>
+    </div>
+</div>
+</body>
+</html>
+

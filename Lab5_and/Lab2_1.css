@@ -1,0 +1,182 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.grid-table {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 0.33fr 2fr 0.33fr 1fr;
+    width: 100%;
+    height: 100vh;
+}
+
+.cell1 {
+    background-color: lightblue;
+    border: 1px black solid;
+    padding: 16px;
+    grid-area: 1 / 1 / 1 / 4;
+}
+
+.cell2 {
+    background-color: lightsalmon;
+    border: 1px black solid;
+    padding: 16px;
+    grid-area: 2 / 1 / 4 / 1;
+}
+
+.cell7 {
+    background-color: lightblue;
+    border: 1px black solid;
+    padding: 16px;
+    grid-area: 5 / 1 / 5 / 4;
+}
+
+.cell4 {
+    background-color: lightsalmon;
+    border: 1px black solid;
+    padding: 16px;
+    grid-area: 2 / 3 / 5 / 3;
+}
+
+.cell3 {
+    background-color: lightgreen;
+    border: 1px black solid;
+    padding: 16px;
+    grid-area: 2 / 2 / 2 / 3;
+}
+
+.cell6 {
+    background-color: lightgreen;
+    border: 1px black solid;
+    padding: 16px;
+    grid-area: 4 / 1 / 4 / 3;
+}
+
+.cell5 {
+    background-color: white;
+    border: 1px black solid;
+    padding: 16px;
+    grid-area: 3 / 2 / 3 / 2;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-x, .button-y {
+    background-color: white;
+    border: 2px solid black;
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    font-size: large;
+}
+
+.button-x {
+    text-align: center;
+    top: 16px;
+    right: 16px;
+}
+
+.button-y {
+    text-align: right;
+    bottom: 18px;
+    right: 16px;
+}
+
+nav ul {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    background-color: #333;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 16px;
+    background-color: #333;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    text-align: center;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+@media screen and (max-width: 768px) {
+    .grid-table {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+
+    }
+    .cell1 {
+        grid-area: auto;
+    }
+
+    .cell2 {
+        grid-area: auto;
+    }
+
+    .cell3 {
+        grid-area: auto;
+    }
+
+    .cell4 {
+        grid-area: auto;
+    }
+
+    .cell5 {
+        grid-area: auto;
+    }
+
+    .cell6 {
+        grid-area: auto;
+    }
+
+    .cell7 {
+        grid-area: auto;
+    }
+
+    nav ul {
+        grid-auto-flow: row;
+        gap: 5px;
+        padding: 10px;
+    }
+
+    nav ul li a {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .button-x, .button-y {
+        position: static;
+        width: 100%;
+        max-width: 200px;
+        margin: 10px auto;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .cell1, .cell2, .cell3, .cell4, .cell5, .cell6, .cell7 {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .button-x, .button-y {
+        height: 40px;
+        font-size: medium;
+    }
+}
+
+
